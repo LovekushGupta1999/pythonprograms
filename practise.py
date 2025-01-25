@@ -55,8 +55,8 @@
 
 
 # list
-l1=['1','2','love','gupta','24']
-print(''.join(l1))
+# l1=['1','2','love','gupta','24']
+# print(''.join(l1))
 # print(str1.count('o'))
 
 
@@ -77,21 +77,65 @@ print(''.join(l1))
 
 
 
-l1=['lzzzzve','gupta','golu','myfue']
-print(max(l1))
-print(len(l1))
-print(''.join(l1))
-print(type(''.join(l1)))
-x=(10,20,30,40)
-(l1.extend(x))
-print(l1)
+# l1=['lzzzzve','gupta','golu','myfue']
+# print(max(l1))
+# print(len(l1))
+# print(''.join(l1))
+# print(type(''.join(l1)))
+# x=(10,20,30,40)
+# (l1.extend(x))
+# print(l1)
 
-l1.insert(0,("hello","myname"))
-print(l1)
+# l1.insert(0,("hello","myname"))
+# print(l1)
 
 # print(l1.apppre("monu")) not supported by list but apppre is supported by array
 
+l2=[10,20,30,40,50,15,5,25]
+# l2.sort()
+# print(l2)
 
+# l2.reverse()
+# print(l2)
+
+# l2.sort(reverse=True)
+# print(l2)
+
+# print(l2.pop())
+# l2.remove(15)
+# print(l2)
+
+# l2.clear()
+# print(l2)
+
+# del l2
+# print(l2)
+
+# l3=l2.copy()
+# print(id(l2))
+# print(l3)
+
+# print(l2.index(30,-5))
+
+
+# print(id(l2[0]))
+# print(id(l2[1]))
+# print(id(l2[2]))
+# print(id(l2[3]))
+# print(id(l2[4]))
+# print(id(l2[5]))
+
+
+import sys
+
+x="lovekushgupta"
+l4=[15,15]
+t1=(45,45)
+y=21542
+print(sys.getsizeof(x))
+print(sys.getsizeof(l4))
+print(sys.getsizeof(t1))
+print(sys.getsizeof(y))
 
 
 

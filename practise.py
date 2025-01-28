@@ -91,7 +91,7 @@
 
 # print(l1.apppre("monu")) not supported by list but apppre is supported by array
 
-l2=[10,20,30,40,50,15,5,25]
+# l2=[10,20,30,40,50,15,5,25]
 # l2.sort()
 # print(l2)
 
@@ -126,16 +126,56 @@ l2=[10,20,30,40,50,15,5,25]
 # print(id(l2[5]))
 
 
-import sys
+# import sys
 
-x="lovekushgupta"
-l4=[15,15]
-t1=(45,45)
-y=21542
-print(sys.getsizeof(x))
-print(sys.getsizeof(l4))
-print(sys.getsizeof(t1))
-print(sys.getsizeof(y))
+# x="lovekushgupta"
+# l4=[15,15]
+# t1=(45,45)
+# y=21542
+# print(sys.getsizeof(x))
+# print(sys.getsizeof(l4))
+# print(sys.getsizeof(t1))
+# print(sys.getsizeof(y))
 
+# print(len(l2))
+# print(l2)
+
+
+s1={'1','2','love','gupta','24'}
+# print(s1)
+# print(type(s1))
+# print(id(s1{-1}))
+
+# print(max(s1))
+# s1.clear()
+# print(s1)
+s1.add(50)
+# print(s1)
+
+# s1.add(50)
+# print(s1)
+
+# t5=(50,1,2,3,4)
+# l5=[50,1,2,3,4]
+# s1.add(t5)
+# print(s1)
+
+# s1.update(l5)
+# print(s1)
+
+s2={3,6,7,8}
+s3={3,6,1,2,4,5}
+
+# print(s2.union(s3))
+# print(s2.intersection(s3))
+# s3.intersection_update(s2)
+# print(s3)
+
+# print(s2.difference(s3))
+# s3.difference_update(s2)
+# print(s3)
+
+print(s2.symmetric_difference(s3))
+# s2.
 
 

@@ -141,7 +141,7 @@
 # print(l2)
 
 
-s1={'1','2','love','gupta','24'}
+# s1={'1','2','love','gupta','24'}
 # print(s1)
 # print(type(s1))
 # print(id(s1{-1}))
@@ -149,7 +149,7 @@ s1={'1','2','love','gupta','24'}
 # print(max(s1))
 # s1.clear()
 # print(s1)
-s1.add(50)
+# s1.add(50)
 # print(s1)
 
 # s1.add(50)
@@ -163,8 +163,8 @@ s1.add(50)
 # s1.update(l5)
 # print(s1)
 
-s2={3,6,7,8}
-s3={3,6,1,2,4,5}
+# s2={3,6,7,8}
+# s3={3,6,1,2,4,5}
 
 # print(s2.union(s3))
 # print(s2.intersection(s3))
@@ -175,7 +175,52 @@ s3={3,6,1,2,4,5}
 # s3.difference_update(s2)
 # print(s3)
 
-print(s2.symmetric_difference(s3))
+# print(s2.symmetric_difference(s3))
+
 # s2.
+
+# s="neeraj"
+# l=[1,2,3,4]
+# s9={'neeeraj','rahul','jai'}
+# print(frozenset(s9))
+# print(type(frozenset(s9)))
+# print(frozenset(l))
+# print(type(frozenset(s9)))
+
+
+x=20
+y=10
+z=30
+# if(x>y):
+#     if(x>z):
+#         print(f'{x} is greater')
+#     else:
+#         print(f'{z} is greater')
+# else:
+#     if(y>z):
+#         print(f'{y} is greater')
+#     else:
+#         print(f'{z} is greater')
+
+
+# if(x>y and x>z):
+#     print("x is greater")
+
+# else:
+#     if (y>z):
+#          print("y is greater")
+#     else:
+#          print("z is greater")
+
+
+if(x>y and x>z):
+    print("x is greater")
+elif(y>z):
+    print("y is greater")
+elif(z>y):
+     print("z is greater")
+
+
+
 
 

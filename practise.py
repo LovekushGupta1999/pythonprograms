@@ -213,14 +213,19 @@ z=30
 #          print("z is greater")
 
 
-if(x>y and x>z):
-    print("x is greater")
-elif(y>z):
-    print("y is greater")
-elif(z>y):
-     print("z is greater")
+# if(x>y and x>z):
+#     print("x is greater")
+# elif(y>z):
+#     print("y is greater")
+# elif(z>y):
+#      print("z is greater")
 
-
+n=int(input("enter any value"))
+i=0
+while i<=n:
+    
+    print (2*i)
+    i=i+1
 
 
 

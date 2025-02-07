@@ -220,12 +220,49 @@ z=30
 # elif(z>y):
 #      print("z is greater")
 
-n=int(input("enter any value"))
-i=0
-while i<=n:
+# n=input("enter any value")
+# x=len(n)
+# x=(n.__len__())
+# print(x)
+# print(type(n))
+# n=int(n)
+# print(type(n))
+# revers=0
+# while n>0:
+#       x=x-1
+#       revers=revers+((n%10)*(10**(x)))
+#       n=n//10
     
-    print (2*i)
+# print(revers)  
+
+# char to ascii with ord()
+# ascii to char with chr()  
+# range function is used --range(start,stop, step)
+# j=range(11,0,-1)
+# print(j)
+# print(list(j))
+# for i in n:
+#       print(i)
+
+# nam=input("enter any value")
+# g=len(nam)-1
+# renam=""
+# while g>=0:
+#       renam+=nam[g]
+#       g=g-1
+# print(renam)    
+#   
+
+
+# x=eval(input("enter your value"))
+# print(x)
+# print(type(x))
+
+n=5
+i=0
+while i<n:
+    print(' '*(i)+' *'*(n-i))
     i=i+1
-
-
-
+while i<n:
+    print(' '*(n-i)+' *'*(i))
+    i=i+1

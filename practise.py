@@ -258,11 +258,34 @@ z=30
 # print(x)
 # print(type(x))
 
-n=5
-i=0
-while i<n:
-    print(' '*(i)+' *'*(n-i))
-    i=i+1
-while i<n:
-    print(' '*(n-i)+' *'*(i))
-    i=i+1
+# n=5
+# i=0
+# while i<n:
+#     print(' '*(i)+' *'*(n-i))
+#     i=i+1
+# while i<n:
+#     print(' '*(n-i)+' *'*(i))
+#     i=i+1
+
+# lcm 
+x=int(input("enter first number"))
+y=int(input("enter second number"))
+# z=maxno=max(x,y)
+# while True :
+#       if maxno%x==0 and maxno%y==0 :
+#           print(maxno)
+#           break
+#       maxno=maxno+z   
+
+
+# hcf
+minno=min(x,y)
+i=1
+while i<=minno :
+      if x%i==0 and y%i==0 :
+          hcf=i
+      i=i+1
+print(hcf) 
+
+           
+    

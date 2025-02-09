@@ -290,17 +290,31 @@ z=30
 x=eval(input("enter your value"))
 g=len(x)-1 #lastindex
 count=-1 
-i=0
-while i<=g//2:
-      if(x[i]!=x[g-i]):      #if(x[i]!=x[-1-i])
-        break
-      else:  
-        count=count+1
-      i=i+1
+# i=0
+# while i<=g//2:
+#       if(x[i]!=x[g-i]):      #if(x[i]!=x[-1-i])
+#         break
+#       else:  
+#         count=count+1
+#       i=i+1
 
-if(count==(g//2)):
-    print("palindrom")
-else:
-    print("not palindrom")     
+# if(count==(g//2)):
+#     print("palindrom")
+# else:
+#     print("not palindrom")     
+
+# ------------------------using range-------------------------------
+
+# for i in range(g,g//2,-1):
+#     if(x[i]!=x[g-i]): 
+#         print(x[i],x[g-i])    
+#         break
+#     else:  
+#         count=count+1
+      
+# if(count==(g//2)):
+#     print("palindrom")
+# else:
+#     print("not palindrom")  
               
     

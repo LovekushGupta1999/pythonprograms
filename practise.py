@@ -254,7 +254,6 @@ z=30
 #   
 
 
-# x=eval(input("enter your value"))
 # print(x)
 # print(type(x))
 
@@ -268,8 +267,8 @@ z=30
 #     i=i+1
 
 # lcm 
-x=int(input("enter first number"))
-y=int(input("enter second number"))
+# x=int(input("enter first number"))
+# y=int(input("enter second number"))
 # z=maxno=max(x,y)
 # while True :
 #       if maxno%x==0 and maxno%y==0 :
@@ -279,13 +278,29 @@ y=int(input("enter second number"))
 
 
 # hcf
-minno=min(x,y)
-i=1
-while i<=minno :
-      if x%i==0 and y%i==0 :
-          hcf=i
-      i=i+1
-print(hcf) 
+# minno=min(x,y)
+# i=1
+# while i<=minno :
+#       if x%i==0 and y%i==0 :
+#           hcf=i
+#       i=i+1
+# print(hcf) 
 
-           
+#palindrom
+x=eval(input("enter your value"))
+g=len(x)-1 #lastindex
+count=-1 
+i=0
+while i<=g//2:
+      if(x[i]!=x[g-i]):      #if(x[i]!=x[-1-i])
+        break
+      else:  
+        count=count+1
+      i=i+1
+
+if(count==(g//2)):
+    print("palindrom")
+else:
+    print("not palindrom")     
+              
     

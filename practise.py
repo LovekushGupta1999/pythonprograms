@@ -287,9 +287,9 @@ z=30
 # print(hcf) 
 
 #palindrom
-x=eval(input("enter your value"))
-g=len(x)-1 #lastindex
-count=-1 
+# x=eval(input("enter your value"))
+# g=len(x)-1 #lastindex
+# count=-1 
 # i=0
 # while i<=g//2:
 #       if(x[i]!=x[g-i]):      #if(x[i]!=x[-1-i])
@@ -318,3 +318,127 @@ count=-1
 #     print("not palindrom")  
               
     
+#function
+# def function_name(parameters):
+#     "doc string optional"
+#     function body
+#     return
+
+# def add(x,y):
+#     "addition function"
+#     print(x,y)
+#     print(x+y)
+#     return
+
+# add(4,5)    
+# add(y=4,x=5)
+# print(add.__doc__)
+# print(dir(add))#internal function details dekhne ke liye internal method use karte hai
+
+
+# def add(*n):
+#    print(n)
+#    print(type(n))
+#    sum=0
+#    for i in n:
+#     sum+=i
+#    return sum 
+
+
+# x=eval(input("enter your value"))
+# print(add(*x))
+
+# def show(**n):
+#    print(n)
+#    print(type(n))
+#    for key,value in n.items():   #n.keys()//n.values()
+#       print(f'my{key}is{value}')
+
+# show(name="lovekush", age=21)  
+
+# n=x=int(input("enter your number"))
+# sum=0
+# while n>0:
+#    sum+=n%10
+#    n=n//10
+
+# if(x%sum==0) :
+#    print("harsad number") 
+# else:
+#    print("not harsad no.")
+
+
+#anagrams
+# string1=input("enter your first string ")
+# string2=input("enter your 2nd string ")
+
+# if(sorted(string1)==sorted(string2)):
+#    print("anagrams")
+# else:
+#    print("not anagrams")   
+
+# n=x=int(input("enter your number"))
+# n=n**2
+# sum=0
+# while n>0:
+#    sum+=n%10
+#    n=n//10
+
+# if(sum==x) :
+#    print("neon") 
+# else:
+#    print("not neon no.")
+
+
+
+# n=x=int(input("enter your number"))
+# def factorial(n):
+#    fact=1
+#    while(n>0):
+#       fact=fact*n
+#       n=n-1
+#    return fact
+
+# sum=0
+# while n>0:
+#    last_digit=n%10
+#    sum+=factorial(last_digit)
+#    n=n//10
+
+# if(sum==x) :
+#    print("peter") 
+# else:
+#    print("not peter no.")
+
+# n=r=5
+# i=1
+# while n>0:
+#    print(" "*(r-i)," *"*i)
+#    i=i+1
+#    n=n-1
+
+# string=input("enter -")
+# capital=0
+# small=0
+# num=0
+# for x in string:
+#    if x>=chr(65) and x<=chr(90):
+#       capital=capital+1
+#    elif  x>=chr(97) and x<=chr(122):
+#       small=small+1
+#    elif  int(x)>=0 and int(x)<=9:   
+#       num=num+1
+# print("capital_letter-",capital,"small_letter-",small,"number-",num)      
+
+
+##vowels and consonents
+string2=input("enter any string-")
+vowel="aeiouAEIOU"
+countvow=0
+countconso=0
+for x in string2:
+   if x in vowel: #if x=="a"or"e"or"i"or"o"or"u"or"A"or"E"or"I"or"O"or"U": /
+      countvow=countvow+1
+   else:
+      countconso=countconso+1   
+print("vowels-",countvow,"consonents-",countconso)

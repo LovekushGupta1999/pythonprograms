@@ -422,9 +422,9 @@ z=30
 # small=0
 # num=0
 # for x in string:
-#    if x>=chr(65) and x<=chr(90):
+#    if x>=chr(65) and x<=chr(90):  #ifx>=A and x<=Z:
 #       capital=capital+1
-#    elif  x>=chr(97) and x<=chr(122):
+#    elif  x>=chr(97) and x<=chr(122): #elif x>=a and x<=z:
 #       small=small+1
 #    elif  int(x)>=0 and int(x)<=9:   
 #       num=num+1
@@ -432,13 +432,44 @@ z=30
 
 
 ##vowels and consonents
-string2=input("enter any string-")
-vowel="aeiouAEIOU"
-countvow=0
-countconso=0
-for x in string2:
-   if x in vowel: #if x=="a"or"e"or"i"or"o"or"u"or"A"or"E"or"I"or"O"or"U": /
-      countvow=countvow+1
+# string2=input("enter any string-")
+# vowel="aeiouAEIOU"
+# countvow=0
+# countconso=0
+# for x in string2:
+#    if x in vowel: #if x=="a"or"e"or"i"or"o"or"u"or"A"or"E"or"I"or"O"or"U": 
+#       countvow=countvow+1
+#    else:
+#       countconso=countconso+1   
+# print("vowels-",countvow,"consonents-",countconso)
+
+
+#map() function higher order function
+# syntax- map(functionname,collection)
+
+
+def squar(x):
+   if x%2==0:
+     return x+1
    else:
-      countconso=countconso+1   
-print("vowels-",countvow,"consonents-",countconso)
+      return x+2  
+
+l1=eval(input("enter any numeric collection:-"))
+
+res=map(squar,l1)
+print(res)
+print(list(res))
+
+# u=4,
+# print(type(u))
+
+def add(x,y,z):
+    return x+y+z;
+
+l1=eval(input("enter any numeric collection:-"))
+l2=eval(input("enter any numeric collection:-"))
+l3=eval(input("enter any numeric collection:-"))
+
+res=map(add,l1,l2,l3)
+print(res)
+print(list(res))

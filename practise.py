@@ -448,28 +448,62 @@ z=30
 # syntax- map(functionname,collection)
 
 
-def squar(x):
-   if x%2==0:
-     return x+1
-   else:
-      return x+2  
+# def squar(x):
+#    if x%2==0:
+#      return x+1
+#    else:
+#       return x+2  
 
-l1=eval(input("enter any numeric collection:-"))
+# l1=eval(input("enter any numeric collection:-"))
 
-res=map(squar,l1)
-print(res)
-print(list(res))
+# res=map(squar,l1)
+# print(res)
+# print(list(res))
 
 # u=4,
 # print(type(u))
 
-def add(x,y,z):
-    return x+y+z;
+# def add(x,y,z):
+#     return x+y+z
 
-l1=eval(input("enter any numeric collection:-"))
-l2=eval(input("enter any numeric collection:-"))
-l3=eval(input("enter any numeric collection:-"))
+# l1=eval(input("enter any numeric collection:-"))
+# l2=eval(input("enter any numeric collection:-"))
+# l3=eval(input("enter any numeric collection:-"))
 
-res=map(add,l1,l2,l3)
-print(res)
-print(list(res))
+# res=map(add,l1,l2,l3)
+# print(res)
+# print(list(res))
+
+
+# def outer_fun(fun1):
+#   def inner_fun():
+#     print("before")
+#     fun1()
+#     print("after")
+#   return inner_fun
+
+# @outer_fun
+# def fun():
+#   print("this is function")
+
+# res=outer_fun(fun)    
+# print(res)
+# res()  
+# fun()
+
+
+def outer_f(funct):
+  def inner_f(x,y,z):
+    x=x+5
+    y=y+5
+    z=z+5
+    print(funct(x,y,z))
+  return inner_f  
+
+@outer_f
+def funt(x,y,z):
+  return x+y+z
+
+# res=outer_f(funt)
+# res(10,20,30)
+funt(x,y,z)

@@ -492,18 +492,35 @@ z=30
 # fun()
 
 
-def outer_f(funct):
-  def inner_f(x,y,z):
-    x=x+5
-    y=y+5
-    z=z+5
-    print(funct(x,y,z))
-  return inner_f  
+# def outer_f(funct):
+#   def inner_f(x,y,z):
+#     x=x+5
+#     y=y+5
+#     z=z+5
+#     print(funct(x,y,z))
+#   return inner_f  
 
-@outer_f
-def funt(x,y,z):
-  return x+y+z
+# @outer_f
+# def funt(x,y,z):
+#   return x+y+z
 
 # res=outer_f(funt)
 # res(10,20,30)
-funt(x,y,z)
+# funt(x,y,z)
+
+
+#modules- is a file that contains function and variable and class and methods and python code 
+# collection of modules is called package, this folder must contain __init__.py file in it
+# A single Python file containing code is considered a "module," while a directory that holds multiple related modules together is called a "package". 
+# Key points about packages:
+# Organization:
+# Packages allow you to organize related modules into a hierarchical structure within a directory. 
+# __init__.py file:
+# A special file named __init__.py is usually present within a package directory to signify it as a package. 
+
+x=10
+y=20
+z=30
+
+def add(x,y,z):
+    print(x+y+z)

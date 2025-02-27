@@ -444,6 +444,7 @@ z=30
 # print("vowels-",countvow,"consonents-",countconso)
 
 
+
 #map() function higher order function
 # syntax- map(functionname,collection)
 
@@ -518,9 +519,38 @@ z=30
 # __init__.py file:
 # A special file named __init__.py is usually present within a package directory to signify it as a package. 
 
-x=10
-y=20
-z=30
+# x=10
+# y=20
+# z=30
 
-def add(x,y,z):
-    print(x+y+z)
+# def add(x,y,z):
+#     print(x+y+z)
+
+
+class student:
+    ''' student details'''  
+    name='lovekush'
+    quali='BE'
+   
+
+    def __init__(self,name,age):
+        print("i am parameterized constructor")
+        self.name=name 
+
+    
+    def __init__(self):  # self is a reference variable is used to point  object of current class # work similar like this pointer in cpp
+        print("i am constructor")  
+
+
+# print (dir(student)) #------> given all magic method    
+# print(student.__doc__)  # print class comment
+
+# print(student)
+#vari=student #here only class load to another variable
+# print(vari)
+#obj=student("raj",23)  #class name with parenthesis  is used to make obj of class parenthesis is used to invoke constructor of class ,constructior is used to initialise object of class
+
+obj=student()  #class name with parenthesis  is used to make obj of class parenthesis is used to invoke constructor of class ,constructior is used to initialise object of class
+# print(obj)
+
+

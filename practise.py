@@ -533,13 +533,19 @@ class student:
     quali='BE'
    
 
-    def __init__(self,name,age):
+    def __init__(self,name,age,marks):
         print("i am parameterized constructor")
         self.name=name 
+        self.age=age
+        self.marks=marks
+     
 
     
-    def __init__(self):  # self is a reference variable is used to point  object of current class # work similar like this pointer in cpp
-        print("i am constructor")  
+    def new_fea(self,city):  # self is a reference variable is used to point  object of current class # work similar like this pointer in cpp
+        self.p=city
+        print("i am constructor") 
+    def show(self):
+        print(self.name,self.age, self.marks,self.p,self.schoolnam)     
 
 
 # print (dir(student)) #------> given all magic method    
@@ -550,7 +556,11 @@ class student:
 # print(vari)
 #obj=student("raj",23)  #class name with parenthesis  is used to make obj of class parenthesis is used to invoke constructor of class ,constructior is used to initialise object of class
 
-obj=student()  #class name with parenthesis  is used to make obj of class parenthesis is used to invoke constructor of class ,constructior is used to initialise object of class
+obj=student("lovekush",23,98)  #class name with parenthesis  is used to make obj of class parenthesis is used to invoke constructor of class ,constructior is used to initialise object of class
 # print(obj)
-
+obj.schoolnam="shss"
+obj.new_fea("bhopal")
+obj.show()
+print(obj.schoolnam)
+print(obj.name)
 

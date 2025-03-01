@@ -527,25 +527,25 @@ z=30
 #     print(x+y+z)
 
 
-class student:
-    ''' student details'''  
-    name='lovekush'
-    quali='BE'
-   
+# class student:
+#     ''' student details'''  
+#     name='lovekush'
+#     quali='BE'
+    # self.address="nehru nagar"
 
-    def __init__(self,name,age,marks):
-        print("i am parameterized constructor")
-        self.name=name 
-        self.age=age
-        self.marks=marks
+    # def __init__(self,name,age,marks):
+    #     print("i am parameterized constructor")
+      
+    #     self.age=age
+    #     self.marks=marks
      
 
     
-    def new_fea(self,city):  # self is a reference variable is used to point  object of current class # work similar like this pointer in cpp
-        self.p=city
-        print("i am constructor") 
-    def show(self):
-        print(self.name,self.age, self.marks,self.p,self.schoolnam)     
+    # def new_fea(self,city):  # self is a reference variable is used to point  object of current class # work similar like this pointer in cpp
+    #     self.p=city
+    #     print("i am constructor") 
+    # def show(self):
+    #     print(self.name,self.age, self.marks,self.p,self.schoolnam)     
 
 
 # print (dir(student)) #------> given all magic method    
@@ -556,11 +556,32 @@ class student:
 # print(vari)
 #obj=student("raj",23)  #class name with parenthesis  is used to make obj of class parenthesis is used to invoke constructor of class ,constructior is used to initialise object of class
 
-obj=student("lovekush",23,98)  #class name with parenthesis  is used to make obj of class parenthesis is used to invoke constructor of class ,constructior is used to initialise object of class
-# print(obj)
-obj.schoolnam="shss"
-obj.new_fea("bhopal")
-obj.show()
-print(obj.schoolnam)
-print(obj.name)
+# obj=student("lovekush",23,98)  #class name with parenthesis  is used to make obj of class parenthesis is used to invoke constructor of class ,constructior is used to initialise object of class
+# # print(obj)
+# obj.schoolnam="shss"
+# obj.new_fea("bhopal")
+# obj.show()
+# print(obj.schoolnam)
+# print(obj.name)
+
+
+
+#static variable and static class
+
+class Student :
+    school="shss"  #declaration of static  variable
+    count=0
+    def __init__(self):
+        Student.count=Student.count+1
+
+    def new(self):
+        Student.city="bhopal"   
+    def show():
+        print(Student.city,Student.count)
+
+obj1=Student()
+obj1.new()
+print(Student.count)
+Student.show()
+       
 

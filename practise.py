@@ -585,3 +585,36 @@ print(Student.count)
 Student.show()
        
 
+class book:
+    price=100
+    totalpages=500
+    def _init_(self,title,author):
+        self.title=title
+        self.author=author
+    @classmethod    
+    def update(cls,nprice,npage):
+        cls.price=nprice
+        cls.totalpages=npage
+
+    @classmethod    
+    def addNew(cls,author):
+        cls.author2=author
+    def show(self):
+        print(self.author,self.title,book.price,book.totalpages)
+    @staticmethod
+    def welcome():
+        print("welcome to my web pages")
+    @staticmethod
+    def thanx():
+        print("thanks for visit")    
+
+publisher1=book("python","harsh")
+publisher1.show()
+publisher1.update(2000,500)       
+publisher1.show()
+obj=book()
+book.update()
+book.welcome()
+obj.showdetail()
+book.thanx()
+obj.thanx()

@@ -568,21 +568,21 @@ z=30
 
 #static variable and static class
 
-class Student :
-    school="shss"  #declaration of static  variable
-    count=0
-    def __init__(self):
-        Student.count=Student.count+1
+# class Student :
+#     school="shss"  #declaration of static  variable
+#     count=0
+#     def __init__(self):
+#         Student.count=Student.count+1
 
-    def new(self):
-        Student.city="bhopal"   
-    def show():
-        print(Student.city,Student.count)
+#     def new(self):
+#         Student.city="bhopal"   
+#     def show():
+#         print(Student.city,Student.count)
 
-obj1=Student()
-obj1.new()
-print(Student.count)
-Student.show()
+# obj1=Student()
+# obj1.new()
+# print(Student.count)
+# Student.show()
        
 
 class book:
@@ -612,9 +612,5 @@ publisher1=book("python","harsh")
 publisher1.show()
 publisher1.update(2000,500)       
 publisher1.show()
-obj=book()
-book.update()
-book.welcome()
-obj.showdetail()
-book.thanx()
-obj.thanx()
+
+print(publisher1.price)
